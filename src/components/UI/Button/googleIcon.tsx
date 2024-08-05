@@ -3,16 +3,13 @@ import { IGoogleIconProps } from '@/types/types'
 
 export default function GoogleIcon({ title, size, action }: IGoogleIconProps) {
 	return (
-		<button className='button'>
+		<a href="#">
 			<span
-				className="material-symbols-outlined"
-				style={{
-					fontSize: size + 'px'
-				}}
+				className="material-symbols-outlined icon"
 				onClick={action}
 			>
 				{title}
 			</span>
-		</button>
+		</a>
 	)
 }

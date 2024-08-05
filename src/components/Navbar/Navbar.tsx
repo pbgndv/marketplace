@@ -2,6 +2,7 @@ import './Navbar.scss'
 import { useRouter } from 'next/navigation'
 
 import React from "react";
+import GoogleIcon from '../UI/Button/googleIcon';
 
 export default function Navbar() {
     const router = useRouter()
@@ -25,23 +26,12 @@ export default function Navbar() {
                     </span>
                 </div>
                 <div className="header_navigation">
-                    <a href="#" onClick={() => router.push('/catalog')}>
-                        <span className="material-symbols-outlined icon">
-                            apps
-                        </span>
-                    </a>
-                    <a href="#">
-                        <span className="material-symbols-outlined icon">
-                            shopping_cart
-                        </span>
-                    </a>
-                    <a href="#" onClick={() => router.push('/account')}>
-                        <span className="material-symbols-outlined icon">
-                            account_circle
-                        </span>
-                    </a>
+                   <GoogleIcon title='apps' action={() => router.push('/catalog')}/>
+                   <GoogleIcon title='shopping_cart' action={() => router.push('/basket')}/>
+                   <GoogleIcon title='account_circle' action={() => router.push('/account')}/>
                 </div>
             </div>
     </div>
   )
 }
+
