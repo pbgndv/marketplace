@@ -1,0 +1,83 @@
+.card_for_basket_contain {
+    width: 28vw;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_for_basket_contain_content {
+    width: 100%;
+    gap: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.card_for_basket_contain_img {
+    width: 110px;
+    height: 110px;
+
+    background-image: url(https://pcdn.goldapple.ru/p/p/19000171455/web/696d674d61696e8dc83fcb3c92a94fullhd.webp);
+    object-fit: cover;
+    background-size: 170% 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden,
+}
+
+
+.card_for_basket_contain_text {
+    width: 78%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card_for_basket_contain_text_header {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card_for_basket_contain_text_disc {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-transform: uppercase;
+
+}
+
+.card_for_basket_contain_text_header {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card_for_basket_contain_info {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_for_basket_contain_pieces {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.card_for_basket_contain_price {
+    width: 30%;
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    justify-content: end;
+}
+
+    

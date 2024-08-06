@@ -1,22 +1,19 @@
-
 type TypeNotification = 'Successfully' | 'Warning' | 'Error'
 type TypeButton = 'Primary' | 'Secondary'
 
 export interface ISlide {
-	url: string
-	isCurrent: boolean
-	description: string
+    url: string
+    description: string
+    href: string
 }
 export interface ISliderProps {
-	slides: Array<ISlide>
+    slides: Array<ISlide>
 }
 export interface IButtonProps {
-	title: string
-	type?: TypeButton
-	action?: () => void
+    title: string
+    type?: TypeButton
+    href?: string
+    action?: () => void
 }
 
-export interface IGoogleIconProps extends IButtonProps {
-	size?: number
-}
-
+export type IGoogleIconProps = IButtonProps
